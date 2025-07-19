@@ -1,0 +1,173 @@
+/* Fuente general del sitio */
+body {
+  /* background-color: silver; */
+  background-color: #C9CECE;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+.encabezado-principal {
+  background-color: #03045e ;
+  max-height: 100px;
+}
+
+.boton-compartir {
+  z-index: 10;
+}
+
+/* Sección de contacto */
+.seccion-contacto {
+  background-color: #03045e ;
+  color: white;
+  /* max-height: 100px; */
+}
+
+/* Footer */
+.footer-naranja {
+  background-color: #ffb703;
+  color: white;
+}
+
+/* Estilo del botón de servicio */
+.servicio-btn {
+  height: 200px;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  background-image: url('../img/desarrollador.webp'); /* Puedes sobreescribir en línea si es otro */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border: none;
+}
+
+.mantenimiento-btn {
+  background-image: url('../img/mantenimiento.webp');
+}
+
+.cctv-btn{
+  background-image: url('../img/cctv.webp');
+}
+
+.redes-btn{
+  background-image: url('../img/redes.webp');
+}
+
+.fta-btn{
+  background-image: url('../img/fta.webp');
+}
+
+.panelsolar-btn{
+  background-image: url('../img/panelsolar.webp');
+}
+
+.zkteco-btn{
+  background-image: url('../img/zkteco.webp');
+}
+
+.cerco-btn{
+  background-image: url('../img/cerco.webp');
+}
+
+.gps-btn{
+  background-image: url('../img/gps.webp');
+}
+
+
+.servicio-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Título dentro del botón */
+ .servicio-btn .titulo-servicio {
+  /* background: rgba(237, 235, 241, 0.5); */
+  background: rgba(213, 197, 241, 0.5);
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: #03045e;
+  font-weight: 600;
+  font-size: 1.4rem; /* Aumenta el tamaño del texto */
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 4px #ffffff; /* sombra negra */
+}
+
+
+/* Modal: encabezado y cuerpo */
+.modal-titulo {
+  background-color: #03045e;
+  color: #cccffa;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2em;
+}
+
+.modal-cuerpo {
+  /* background-color: #cccffa; */
+  background-color: #C9CECE;
+  color: #03045e;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.2em;
+}
+
+.modal-footer-naranja {
+  background-color: #ffb703; /* Naranja industrial */
+  color: white;
+  font-weight: bold;
+ 
+}
+
+/* ===============================codigo para whatsApp=========================== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ===========mensaje para el envio por correo==================== */
+#mensajeEnviado {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* ==================animacion de nuestros servicios========== */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%; /* empieza fuera de la pantalla */
+  animation: scroll-left 10s linear infinite;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffb703;
+  /* color: #06a837;  */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #000000; /* sombra negra */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
